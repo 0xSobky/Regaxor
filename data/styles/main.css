@@ -1,0 +1,81 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: #5B606B url(../images/bg.jpg);
+    color: white;
+    font: 27px georgia;
+    height: 100%;
+    margin: 5px 0 0 0;
+    opacity: .9;
+    overflow: hidden;
+    text-align: center;
+}
+
+#label {
+    font-size: 11px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    margin: 0px 7px;
+}
+
+#matches {
+    border-color: green;
+}
+
+#mismatches {
+    border-color: red;
+}
+
+.input {
+    background: white;
+    border: 1px dotted silver;
+    border-radius: 3px;
+    font-size: 20px;
+    margin-bottom: 5px;
+    min-height: 36px;
+    min-width: 800px;
+}
+
+.input.text {
+    left: 10px;
+    position: relative;
+}
+
+.input.btn {
+    display: inline;
+    min-width: 402px;
+}
+
+.output {
+    display: inline-block;
+    background: white;
+    border: 2px dashed;
+    min-height: 70%;
+    min-width: 45%;
+    font-size: .6em;
+}
+
+span[data-help] {
+    color: white;
+    cursor: help;
+    left: 10px;
+    position: relative;
+}
+
+span[data-help]:hover::after {
+    background-color: gray;
+    border: 1px #aaaaaa solid;
+    border-radius: 10px;
+    color: white;
+    content: attr(data-help);
+    font-size: 14px;
+    left: 0;
+    min-width: 200px;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+}

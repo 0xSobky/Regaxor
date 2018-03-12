@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Regaxor</title>
+    <link rel="stylesheet" href="data/styles/main.css">
+    <script src="data/scripts/regaxor.js"></script>
+</head>
+
+<body>
+    <form>
+        Regular Expression:
+        <div>
+            <input type="text" id="regex-inpt" class="input text" spellcheck="false" placeholder="/RegExp?/i">
+            <span data-help="A regex/string literal.">?</span>
+            <sup>
+                <label id="label"><input type="checkbox" id="literal-chk" checked>literal</label>
+            </sup>
+        </div>
+        Sample String:
+        <div>
+            <textarea id="fuzz-textarea" class="input text" spellcheck="false"></textarea>
+            <span data-help="A matching/mismatching raw string.">?</span>
+        </div>
+        <div id="status"></div>
+        <button id="reset-btn" class="input btn">Reset</button><button id="fuzz-btn" class="input btn">Fuzz!</button>
+    </form>
+    <textarea id="mismatches-textarea" class="output" readonly></textarea>
+    <textarea id="matches-textarea" class="output" readonly></textarea>
+    <script src="data/scripts/main.js"></script>
+</body>
+
+</html>
