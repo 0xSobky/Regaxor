@@ -38,9 +38,7 @@ let fuzzFn = () => {
     let stringify = (arr) => {
         arr.forEach((val, index) => {
             arr[index] = JSON.stringify(val).
-                replace(/\u2028/g, '\\u2028').
-                replace(/"\\"|\\""/g, '"').
-                replace(/\\\\/g, '\\');
+                replace(/\u2028/g, '\\u2028');
         });
         return arr;
     };
